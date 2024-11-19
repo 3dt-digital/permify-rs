@@ -1,3 +1,27 @@
+### ⚠️ Warning: Under Development
+
+**This project is currently under active development.**  
+Features and API endpoints may not yet be fully implemented, and breaking changes can occur at any time. While we strive to provide a stable and functional client, please note the following:
+
+1. **Incomplete Functionality:** Some API endpoints might still be missing or partially implemented.
+2. **Breaking Changes:** Function signatures, structures, and behavior may change without prior notice.
+3. **Limited Testing:** The client has not yet undergone comprehensive testing. Bugs or unexpected behavior might occur.
+
+If you encounter issues, please feel free to [open an issue](https://github.com/3dt-digital/permify-rs/issues) or contribute improvements.
+
+We recommend using this library with caution in production environments until it reaches a stable release.
+
+---
+
+### 🎯 Roadmap to Stability
+
+1. Complete implementation of all Permify API endpoints.
+2. Add comprehensive test coverage.
+3. Provide detailed examples and documentation for usage.
+4. Release version `1.0.0` after stability and reliability are achieved.
+
+---
+
 # Permify Client
 
 A Rust client library for interacting with the [Permify API](https://docs.permify.co/api-reference/introduction). This library provides a simple and efficient way to perform authorization checks and manage permissions using Permify's REST API.

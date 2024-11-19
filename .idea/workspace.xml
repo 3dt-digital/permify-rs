@@ -7,13 +7,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fd57d1a-1b7b-4688-9151-78439d6eaa72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/errors.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models.rs" afterDir="false" />
-    </list>
+    <list default="true" id="9fd57d1a-1b7b-4688-9151-78439d6eaa72" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729961496112</updated>
       <workItem from="1729961498503" duration="3399000" />
-      <workItem from="1732018055978" duration="2459000" />
+      <workItem from="1732018055978" duration="2770000" />
     </task>
     <servers />
   </component>
