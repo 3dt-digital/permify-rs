@@ -40,7 +40,7 @@ Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-permify-rs = { git = "https://github.com/your-username/permify-client", branch = "main" }
+permify-rs = { git = "https://github.com/3dt-digital/permify-rs", branch = "main" }
 ```
 
 ## Requirements
