@@ -1,0 +1,25 @@
+[package]
+name = "permify-rs"
+version = "0.1.0"
+
+description = "A Rust client library for interacting with the Permify API."
+documentation = "https://docs.permify.co/api-reference/introduction"
+homepage = "https://github.com/3dt-digital/permify-rs"
+repository = "https://github.com/3dt-digital/permify-rs"
+license = "MIT"
+readme = "README.md"
+keywords = ["permify", "rest-client", "rust", "authorization", "api-client"]
+categories = ["api-bindings", "authentication", "asynchronous", "command-line-utilities", "development-tools"]
+
+# Autoren
+authors = ["Torben Hammes <torben@3dt.digital>"]
+
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+reqwest = { version = "0.12.9", features = ["json"] }
+serde = { version = "1.0.215", features = ["derive"] }
+thiserror = "2.0.3"
+tokio = { version = "1.41.1", features = ["full"] }
+serde_json = "1.0.133"
