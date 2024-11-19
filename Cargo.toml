@@ -17,9 +17,9 @@ authors = ["Torben Hammes <torben@3dt.digital>"]
 edition = "2021"
 
 [dependencies]
-dotenv = "0.15.0"
-reqwest = { version = "0.12.9", features = ["json"] }
-serde = { version = "1.0.215", features = ["derive"] }
-thiserror = "2.0.3"
-tokio = { version = "1.41.1", features = ["full"] }
-serde_json = "1.0.133"
+dotenv = "0.15"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0"
+tokio = { version = "1.41", features = ["full"] }
+serde_json = "1.0"
