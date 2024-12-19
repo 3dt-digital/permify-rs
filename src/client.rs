@@ -23,7 +23,7 @@ impl PermifyClient {
     // ------------------
 
     pub async fn write_schema(&self, schema: &str) -> Result<SchemaRes, Error> {
-        let url = format!("{}/schema/write", self.base_url);
+        let url = format!("{}/schemas/write", self.base_url);
         self.client
             .post(&url)
             .header("Authorization", format!("Bearer {}", self.api_key))
