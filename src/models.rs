@@ -1,21 +1,19 @@
 use serde::{Deserialize, Serialize};
 
-/// Generic API response model
+/// Modell für die Schema-Antwort
 #[derive(Debug, Serialize, Deserialize)]
-pub struct ApiResponse<T> {
-    pub data: T,
-    pub message: Option<String>,
-    pub errors: Option<Vec<String>>,
+pub struct SchemaRes {
+    pub schema_version: String,
 }
 
-/// Model for an attribute request
+/// Modell für Attribute
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Attribute {
     pub key: String,
     pub value: serde_json::Value,
 }
 
-/// Model for authorisation data
+/// Modell für Autorisierungsdaten
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AuthorizationData {
     pub subject: String,
@@ -23,7 +21,7 @@ pub struct AuthorizationData {
     pub object: String,
 }
 
-/// Filter for data queries (e.g. Read Relationships, Delete Data)
+/// Filter für Datenabfragen
 #[derive(Debug, Serialize, Deserialize)]
 pub struct DataFilter {
     pub subject: Option<String>,
@@ -31,7 +29,7 @@ pub struct DataFilter {
     pub object: Option<String>,
 }
 
-/// Model for a bundle
+/// Modell für ein Bundle
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Bundle {
     pub id: Option<String>,
@@ -39,34 +37,34 @@ pub struct Bundle {
     pub content: serde_json::Value,
 }
 
-/// Filter for the search for subjects
+/// Filter für die Subjekt-Suche
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SubjectFilter {
     pub object: String,
     pub relation: String,
 }
 
-/// Filter for entities (e.g. lookup entity)
+/// Filter für Entitäten
 #[derive(Debug, Serialize, Deserialize)]
 pub struct EntityFilter {
     pub subject: String,
     pub relation: String,
 }
 
-/// Model for an entity
+/// Modell für eine Entität
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Entity {
     pub id: String,
     pub name: String,
 }
 
-/// Filter for authorisations of a subject
+/// Modell für die Berechtigungen eines Subjekts
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SubjectPermissionFilter {
     pub subject: String,
 }
 
-/// Model for access checks
+/// Modell für Zugriffskontrollen
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AccessCheckRequest {
     pub subject: String,
@@ -79,7 +77,7 @@ pub struct AccessCheckResponse {
     pub allowed: bool,
 }
 
-/// Model for the permission extension
+/// Modell für Permission-Erweiterungen
 #[derive(Debug, Serialize, Deserialize)]
 pub struct PermissionExpandRequest {
     pub subject: String,
@@ -92,20 +90,20 @@ pub struct PermissionExpandResponse {
     pub tree: serde_json::Value,
 }
 
-/// Model for a tenant
+/// Modell für einen Tenant
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Tenant {
     pub id: String,
     pub name: String,
 }
 
-/// Filter for the watch function
+/// Filter für die Watch-Funktion
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WatchFilter {
     pub object: String,
 }
 
-/// Model for a watch event
+/// Modell für ein Watch-Event
 #[derive(Debug, Serialize, Deserialize)]
 pub struct WatchEvent {
     pub id: String,
